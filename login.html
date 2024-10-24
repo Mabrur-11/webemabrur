@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>LOGIN</title>
+    <style>
+         body {
+	        background-image: url("img/bagr.jpeg");
+	        background-repeat: no-repeat;
+	        background-size: cover;
+          font-family: Verdana, sans-serif;
+        }
+
+        .container {
+	        width: 300px;
+	        margin: 40px auto;
+          margin-top: 5%;
+          margin-bottom: 5%;
+        }
+
+        .card {
+	        background-color: rgb(0, 0, 0);
+	        padding: 20px;
+	        border: 1px solid #0000002d;
+	        border-radius: 15px;
+	        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          z-index: 1;
+        }
+
+        h1 {
+	        margin-top: 0;
+            color: white;
+            text-shadow: 0 0 40px #00fffb, 0 0 10px #0081bc;
+        }
+
+        /* #input{
+            width: 200px;
+            height: 30px;
+            font-size: 16px;
+            outline: none;
+            padding: 6px 16px;
+            border: 1px solid gray;
+            border-radius: 4px;
+        }
+
+        .input-group{
+            position: relative;
+            margin-bottom: 15px;
+        }
+
+        .input-group #input:focus{
+            border-color: rgb(0, 0, 0);
+        }
+
+        .input-group label{
+            position: absolute;
+            cursor: text;
+            top: 14px;
+            left: 10px;
+            font-size: 12px;
+            font-weight: bold;
+            background: #fff;
+            padding: 0 10px;
+            color: #999;
+            transition: all .3s ease;
+            border-radius: 2px;
+        }
+
+        .input-group input:focus + label{
+            top: -5px;
+            color: rgb(0, 0, 0);
+            font-size: 11px;
+        } */
+
+        form {
+        	margin-top: 15px;
+        }
+
+        input[type="email"], input[type="password"] {
+	        width: 100%;
+	        padding: 10px;
+	        margin-bottom: 20px;
+	        border: 1px solid #ccc;
+        }
+
+        button[type="submit"] {
+	        background-color: #4CAF50;
+	        color: #fff;
+	        padding: 10px 20px;
+	        border: none;
+	        border-radius: 5px;
+	        cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+	        background-color: #3e8e41;
+        }
+        p{
+          color: white;
+        }
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="img/log.png" alt="Bootstrap" width="50" height="50">
+      </a>
+      <a class="navbar-brand" href="#">Mabrur</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="profile.html">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="galeryKami.html">Galeri</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kontakKami.html">Kontak</a>
+          </li>
+        </ul>
+        <ul>
+          <button class="btn btn-outline-success me-2" type="button"><a class="nav-link" href="login.html">Login</a></button>
+          <button class="btn btn-outline-success me-2" type="button"><a class="nav-link" href="daftar.html">Daftar</a></button>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <!-- <div class="navigation">
+        <a href="index.html"> Home <br></a>
+        <a href="profile.html"> Profile<br></a>
+        <a href="galeryKami.html"> Gallery <br></a>
+        <a href="kontakKami.html"> Contact<br></a>
+        <a href="login.html"> Login <br></a>
+    </div> -->
+    <div class="container">
+      <div class="card">
+        <h1 style="text-align: center;">Login</h1>
+        <form>
+          <!-- <div class="input-group"> -->
+          <input type="email" placeholder="E-mail" required>
+          <!-- <label for="input">E-mail</label></div> -->
+          <!-- <div class="input-group"> -->
+          <input type="password" placeholder="Password" required>
+          <!-- <label for="input">Password</label> </div> -->
+           <P style="font-size: smaller;">Lupa Password?</P>
+          <button type="submit">Login</button><br><br>
+        </form>
+              <p style="text-align: center;">Tidak punya akun? <a href="daftar.html">Daftar</a></p>
+      </div>
+    </div>
+    <br>
+      <footer class="bg-body-tertiary text-center text-lg-start">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+          © 2020 Copyright: MabrurWeb
+        </div>
+        <!-- Copyright -->
+      </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  
+</body>
+</html>

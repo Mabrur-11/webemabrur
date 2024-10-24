@@ -1,0 +1,21 @@
+.navigation {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: rgb(26, 160, 190);
+}
+
+.navigation a {
+    color: rgb(8, 8, 8);
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.navigation a:hover {
+    background-color: #b1f5a5;
+}
+.konten:hover>:not(:hover){
+    filter: grayscale(1) blur(5px);
+}
